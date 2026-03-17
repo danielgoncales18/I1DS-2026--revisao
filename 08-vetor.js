@@ -25,4 +25,4 @@ console.table(dinos);
 console.log("o vetor agora tem", dinos.length, "elementos");
 
 // obter um elemento a partir do indice
-console.log("1")
+console.log("1
