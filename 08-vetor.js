@@ -25,9 +25,9 @@ console.table(dinos);
 console.log("o vetor agora tem", dinos.length, "elementos");
 
 // obter um elemento a partir do indice
-console.log("1ª posiição:", dinos[0];
-console.log("4ª posiição:", dinos[3];
-console.log("20ª posiição:",dinos[20];
+console.log("1ª posiição:", dinos[0]);
+console.log("4ª posiição:", dinos[3]);
+console.log("20ª posiição:",dinos[20]);
 
 //pop -> remover um elemento do final do vetor (ultimo elemento)
 dinos.pop();
@@ -72,4 +72,10 @@ console.table(dinos);
 
 // alterar o valor de um elemento a partir do indice
 dinos[1] = "anquilossauro";
+console.table(dinos);
+
+// slice - > criar uma copia do vetor 
+let novalista = dinos = dinos.slice(); // copia completa do vetor dinos
+
+let listaparcial = dinos.slice(1,3); // cria uma copia do vetor dinos a partir do indice onde comeca e onde termina a copia 
 console.table(dinos);
