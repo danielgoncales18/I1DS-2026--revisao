@@ -34,10 +34,46 @@ retorne uma mensagem informando sua situação.
     A função deve retornar uma frase indicando a situação do aluno.
 */
 
+// parte 01 - inicio da resolução do exercicio
+// function verificarsituacao(nota) {
+//     if (nota < 5){
+//     return "reprovado";
+//     }  else if (nota < 7) {
+//     return "recuperação";
+//     } else{
+//     return "aprovado";
+//     }
+//   }
+  
+//   console.log(verificarsituacao(5));
+//   console.log(verificarsituacao(7));
 
-function prova(nota) {
-    let frase;
-    if (nota <= 5 ) {
-     frase = "reprovado";
-     } else if (nota >=5 && nota <= 6.5){ 
-          
+// parte 02 - solução + parte extra 
+function situacaofinal(n1,n2,n3,n4){
+    let media = (n1 + n2 + n3 + n4) / 4;
+
+    if (media < 5){
+        return "reprovado";
+        } else if (media < 7 ) {
+        return "recuperação";
+        } else {
+            return "aprovado";
+        }
+}
+
+console.log(situacaofinal(7,10,10,10));
+
+
+
+
+function final(n1,n2,n3,n4){
+    let media = (n1 + n2 + n3 +n4) / 4;
+    let situacao;
+
+    if (media < 5) situacao = "reprovado";
+    else if (media < 7 ) situacao = "recuperação";
+    else situação = "aprovado";
+
+    return "media:" + media + " - situação: " + situacao;
+
+    console.log(final)7, 8, 6, 5));5
